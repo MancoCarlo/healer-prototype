@@ -1,0 +1,7 @@
+2022-11-04 07:58:54,843 INFO [main] org.apache.nifi.NiFi Launching NiFi...
+2022-11-04 07:58:57,708 INFO [main] o.a.n.p.AbstractBootstrapPropertiesLoader Determined default application properties path to be '/opt/nifi/nifi-current/./conf/nifi.properties'
+2022-11-04 07:58:57,715 INFO [main] o.a.nifi.properties.NiFiPropertiesLoader Loaded 202 properties from /opt/nifi/nifi-current/./conf/nifi.properties
+2022-11-04 07:58:57,723 INFO [main] org.apache.nifi.NiFi Loaded 202 properties
+2022-11-04 07:58:57,732 INFO [main] org.apache.nifi.BootstrapListener Started Bootstrap Listener, Listening for incoming requests on port 43097
+2022-11-04 07:58:58,184 INFO [main] org.apache.nifi.BootstrapListener Successfully initiated communication with Bootstrap
+2022-11-04 07:58:58,484 INFO [main] org.apache.nifi.nar.NarUnpacker Expanding 104 NAR files with all processors...

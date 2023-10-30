@@ -1,0 +1,68 @@
+Mimic-waveform-18
+INGESTION ORIGINAL
+CONVERT PARQUET
+Total processParquet time:  0:00:56.086653
+INGESTION PARQUET
+Total transfer time:  00:03:10.559848
+PROCESS 
+Total process time:  0:02:07.982730
+INGESTION PROCESSED
+Total analytical only transfer time:  00:01:31.217270
+Total transfer time:  0:02:04.251376
+
+hadoop fs -du -s -h /user/mimic-iii-waveform/
+306.0 M  918.0 M  /user/mimic-iii-waveform
+hadoop fs -du -s -h /user/mimic-iii-waveform_parquet/
+41.1 M  123.4 M  /user/mimic-iii-waveform_p
+hadoop fs -du -s -h /user/processed
+43.8 M  131.3 M  /user/processed
+-------------------------------------------------------------------------------
+Mimic-waveform-83
+INGESTION ORIGINAL
+Total analytical only transfer time:  0001-01-01 00:11:38.626246
+Total transfer time:  0:14:08.677044
+GET FILES
+Total analytical only transfer time:  0001-01-01 00:00:00
+Total transfer time:  0:00:04.855433
+CONVERT_PARQUET
+Total process time:  0:02:44.470347
+INGESTION PARQUET
+Total analytical only transfer time:  0001-01-01 00:11:20.522374
+Total transfer time:  0:13:51.862986
+PROCESS
+Total transfer time:  0:00:03.091228 (getWaveformParquet)
+Total process time:  0:06:36.400206
+INGESTION PROCESSED
+Total analytical only transfer time:  0001-01-01 00:05:33.503237
+Total transfer time:  0:08:01.212588
+
+hadoop fs -du -s -h /user/mimic-iii-waveform
+949.3 M  2.8 G  /user/mimic-iii-waveform
+hadoop fs -du -s -h /user/mimic-iii-waveform_p
+128.2 M  384.6 M  /user/mimic-iii-waveform_p
+hadoop fs -du -s -h /user/processed
+136.4 M  409.2 M  /user/processed
+--------------------------------------------------------------------------------
+Mimic-waveform-456
+INGESTION ORIGINAL
+Total analytical only transfer time:  0001-01-01 01:08:45.984333
+Total transfer time:  1:22:08.295883
+GET FILES
+Total transfer time:  0:02:43.856496
+CONVERT PARQUET
+Total process time:  0:13:40.114980
+INGESTION PARQUET
+Total analytical only transfer time:  0001-01-01 01:03:49.004367
+Total transfer time:  1:17:21.373969
+PROCESS
+Total process time:  0:29:01.182286
+INGESTION PROCESSED
+Total analytical only transfer time:  0001-01-01 00:34:38.167631
+Total transfer time:  0:48:10.190967
+
+hadoop fs -du -s -h /user/mimic-iii-waveform
+4.1 G  12.3 G  /user/mimic-iii-waveform
+hadoop fs -du -s -h /user/mimic-iii-waveform_p
+571.2 M  1.7 G  /user/mimic-iii-waveform_p
+hadoop fs -du -s -h /user/processed
+605.7 M  1.8 G  /user/processed

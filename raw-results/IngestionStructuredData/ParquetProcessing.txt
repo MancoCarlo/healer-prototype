@@ -1,0 +1,14 @@
+apt install python3-pip (serve per to_parquet)
+python3 -m pip install pyarrow
+pip3 install -U scipy
+pip3 install numpy==1.16.4
+pip install --upgrade pandas --------------------
+
+GetFiles da HDFS in locale per processing
+Total transfer time:  0:06:17.708268
+
+Total process time:  0:02:41.070777 da 3,65 G a 679M conversione in Parquet
+3,65 GB (3.919.950.797 byte)
+
+Total transfer time:  0:04:56.877471 (3,65+ GB not Parquet) 
+Total transfer time:  0:01:00.281500 (678.7 MB Parquet)

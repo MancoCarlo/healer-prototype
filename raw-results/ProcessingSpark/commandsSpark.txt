@@ -1,0 +1,42 @@
+import datetime
+
+URI = sc._gateway.jvm.java.net.URI
+Path = sc._gateway.jvm.org.apache.hadoop.fs.Path
+FileSystem = sc._gateway.jvm.org.apache.hadoop.fs.FileSystem
+Configuration = sc._gateway.jvm.org.apache.hadoop.conf.Configuration
+fs = FileSystem.get(URI("hdfs://namenode:9000"), Configuration())
+status = fs.listStatus(Path('/mimic-iii-waveform/'))
+
+current = datetime.datetime.now()
+
+for fileStatus in status:
+	path = str(fileStatus.getPath())
+	status2 = fs.listStatus(Path(path + "/"))
+	fs.mkdirs(spark._jvm.org.apache.hadoop.fs.Path(path[26:]))
+	for file in status2:
+		path_file = str(file.getPath())
+		if path_file.endswith('hea.txt'):
+			df = spark.read.options(delimiter = ";", header = "True").csv(path_file)
+			units = df.first()
+			un = []
+			for i in range(len(units)):
+				u = str(units[i])
+				u = u.replace("(", "[")
+				u = u.replace(")", "]")
+				un.append(u)
+			for i in range(len(df.columns)):
+				df = df.withColumnRenamed(df.columns[i], str(df.columns[i]).replace(" ", "_"))
+				df = df.withColumnRenamed(df.columns[i], df.columns[i]+un[i])
+			df = spark.createDataFrame(df.tail(df.count()-1))
+			df = df.coalesce(1)
+			df.write.csv('hdfs://namenode:9000/user/root/mimic-iii-waveform/' + path_file[45:]+ '.csv')
+		
+
+
+# Running Spark application on standalone cluster
+
+./bin/spark-submit \
+   --master spark://172.18.0.12:7077 \
+   --deploy-mode cluster \
+   process.py
+

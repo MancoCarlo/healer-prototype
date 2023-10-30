@@ -1,0 +1,22 @@
+#Setup environment:
+docker exec -it namenode bash
+mkdir ingestion 
+exit
+
+#Transfer mimic files in docer container:
+docker cp <path>/mimic-iii-clinical-database-1.4.zip namenode:/ingestion
+
+#Unzip:
+docker exec -it namenode bash
+apt-get update
+apt-get install unzip
+cd ingestion
+unzip mimic-iii-clinical-database-1.4.zip
+rm mimic-iii-clinical-database-1.4.zip
+
+#Install python
+apt-get install python3
+apt-get install nano
+
+#To ingest the files in hdfs
+python3 ingest.py

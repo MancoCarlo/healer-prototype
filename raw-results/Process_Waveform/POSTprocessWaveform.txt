@@ -1,0 +1,49 @@
+Ingestion original unstructured files:
+Total analytical only transfer time:  00:11:47.354763
+Total transfer time:  0:14:21.949648
+949.3 MB (995.383.994 byte)
+
+GetFiles in Local to process:
+Total transfer time:  0:00:04.781124
+
+Process files:
+Total process time:  0:08:29.456618
+
+Reingest files:
+Total analytical only transfer time:  0001-01-01 00:06:07.862776
+Total transfer time:  0:08:35.867153
+Total analytical only transfer time:  0001-01-01 00:11:59.193654
+Total transfer time:  0:14:44.306086
+1.1 GB (1.182.374.919 byte)
+
+-----------------------------------------------------------
+4,09 GB (4.394.726.960 byte)
+
+Total analytical only transfer time:  0001-01-01 01:08:27.057129
+Total transfer time:  1:21:56.320557
+
+Total transfer time:  0:03:06.436270
+
+Total process time:  0:40:03.864167
+
+Total analytical only transfer time:  0001-01-01 00:36:11.554703
+Total transfer time:  0:49:57.949390
+
+4.8 GB (5.130.352.322 byte)
+
+--------------------------------------------------------------
+Total analytical only transfer time:  0001-01-01 00:03:02.974711
+Total transfer time:  0:03:36.990826
+Total process time:  0:02:34.053895
+Total transfer time:  0:02:05.099432
+
+root@f0241f6f08b0:/# hadoop fs -du -s -h /user/mimic-iii-waveform/
+306.0 M  918.0 M  /user/mimic-iii-waveform
+root@f0241f6f08b0:/# hadoop fs -du -s -h /user/processed/
+362.9 M  1.1 G  /user/processed
+
+PARQUET
+root@f0241f6f08b0:/# hadoop fs -du -s -h /user/root/
+22.1 M  66.2 M  /user/root
+root@f0241f6f08b0:/# hadoop fs -du -s -h /user/mimic-iii-waveform/
+306.0 M  918.0 M  /user/mimic-iii-waveform

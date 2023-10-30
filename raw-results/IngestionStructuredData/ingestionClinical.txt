@@ -1,0 +1,34 @@
+0:00:02.591978  to transfer the file:  PROCEDUREEVENTS_MV.csv
+0:00:26.411922  to transfer the file:  DATETIMEEVENTS.csv
+0:00:02.291250  to transfer the file:  D_LABITEMS.csv
+0:00:06.327887  to transfer the file:  D_ITEMS.csv
+0:00:02.217178  to transfer the file:  DIAGNOSES_ICD.csv
+0:00:02.090945  to transfer the file:  TRANSFERS.csv
+0:00:14.232920  to transfer the file:  PRESCRIPTIONS.csv
+0:00:02.010557  to transfer the file:  PATIENTS.csv
+0:00:02.293037  to transfer the file:  ICUSTAYS.csv
+0:00:02.133026  to transfer the file:  DRGCODES.csv
+0:00:50.519546  to transfer the file:  LABEVENTS.csv
+0:01:06.564486  to transfer the file:  INPUTEVENTS_CV.csv
+0:00:04.686880  to transfer the file:  CALLOUT.csv
+0:00:25.574521  to transfer the file:  INPUTEVENTS_MV.csv
+0:00:02.043899  to transfer the file:  D_CPT.csv
+0:01:37.745254  to transfer the file:  NOTEEVENTS.csv
+0:00:02.192166  to transfer the file:  D_ICD_PROCEDURES.csv
+0:00:02.080386  to transfer the file:  PROCEDURES_ICD.csv
+0:00:06.096498  to transfer the file:  CPTEVENTS.csv
+0:00:03.557911  to transfer the file:  D_ICD_DIAGNOSES.csv
+0:00:02.012372  to transfer the file:  SERVICES.csv
+0:00:07.784887  to transfer the file:  OUTPUTEVENTS.csv
+0:00:01.976819  to transfer the file:  CAREGIVERS.csv
+0:00:03.503361  to transfer the file:  MICROBIOLOGYEVENTS.csv
+0:00:02.198903  to transfer the file:  ADMISSIONS.csv
+
+Total transfer time:  0:11:32.468006
+Total transfer time:  0:12:43.145500
+Total transfer time:  0:13:28.622447
+
+11.269.271.552 byte (10.4 GB)
+
+Total transfer time:  0:04:14.700859
+3,65 GB (3.919.950.797 byte)

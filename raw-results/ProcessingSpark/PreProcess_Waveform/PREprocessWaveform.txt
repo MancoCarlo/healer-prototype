@@ -1,0 +1,22 @@
+Total process time:  0:08:04.469166
+949 MB (996.024.320 byte)
+
+Total analytical transfer time:  0001-01-01 00:06:00.160860
+Total transfer time:  0:06:00.225921
+circa 1.1 GB
+
+Total analytical only transfer time:  0001-01-01 00:06:22.037803
+Total transfer time:  0:08:53.010707 (ultima versione ingest con cartelle)
+circa 1.1 GB
+(1.182.374.919 byte)
+
+-----------------------------------------------------------
+10:50:07 end unzip   10:49:24 start unzip
+4,09 GB (4.398.125.056 byte)
+
+
+Total process time:  0:36:16.799526
+Total analytical only transfer time:  00:35:04.712333
+Total transfer time:  0:48:25.839642
+
+-----------------------------------------------------------
